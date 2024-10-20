@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en"  class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind css</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+<body>
+    <div class="flex-col relative  container mx-auto max-h-screen h-screen">
+        <header class="flex justify-between items-center py-4 px-4">
+            <div class="w-52">
+                <img src="../media/logo-light.png" alt="">
+            </div>
+            <ol class="hidden md:flex align items-center gap-x-4 ">
+                <li  class = "hover:text-orange-500 cursor-pointer transition-all"><a href="#"></a>Protfolio</li>
+                <li class = "hover:text-orange-500 cursor-pointer transition-all"><a href="#"></a class = "hover:text-orange-500 cursor-pointer">About</li>
+                <li  class = "hover:text-orange-500 cursor-pointer transition-all"><a href="#"></a class = "hover:text-orange-500 cursor-pointer">Contact</li>
+                <li   class = "hover:text-orange-500 cursor-pointer transition-all"><a href="#"></a class = "hover:text-orange-500 cursor-pointer">Social</li>
+                <li class="bg-orange-500 rounded-xl p-2 text-white hover:bg-slate-500 cursor-pointer transition-colors"><a href="tel:+963931454382"></a>Call Me</li>
+            </ol>
+            <i id='menu' class="fa-solid fa-bars text-2xl md:hidden cursor-pointer transition-all"></i>
+        </header>
+        <ol id = 'list' class="z-10 flex absolute w-full mx-auto flex-col items-center gap-3 bg-slate-100 py-4 hidden shadow-xl">
+            <li  class = "hover:text-orange-500 cursor-pointer transition-all"><a href="#"></a>Protfolio</li>
+            <li class = "hover:text-orange-500 cursor-pointer transition-all"><a href="#"></a class = "hover:text-orange-500 cursor-pointer">About</li>
+            <li  class = "hover:text-orange-500 cursor-pointer transition-all"><a href="#"></a class = "hover:text-orange-500 cursor-pointer">Contact</li>
+            <li   class = "hover:text-orange-500 cursor-pointer transition-all"><a href="#"></a class = "hover:text-orange-500 cursor-pointer">Social</li>
+            <li class="bg-orange-500 rounded-xl p-2 text-white hover:bg-slate-500 cursor-pointer transition-colors"><a href="tel:+963931454382"></a>Call Me</li>
+        </ol>
+        <div class=" relative flex flex-col-reverse md:flex-row  md:gap-3 max-md:text-center">
+            
+            <div class="py-8 md:w-1/2  max-md:justify-evenly">
+                <h2 class="font-bold text-2xl md:py-8 md:text-4xl">Rapidly build modern websites without ever leaving
+                    your HTML.</h2>
+                <p class="py-2 md:py-4">A utility-first CSS framework packed with classes like flex, pt-4, text-center
+                    and rotate-90 that can be composed to build any design, directly in your markup.</p>
+                <a href = "#sec2" class="bg-orange-500 text-white p-4 rounded-2xl hover:bg-slate-500 cursor-pointer transition-colors block w-fit max-md:mx-auto">Get Started</a>
+            </div>
+            <div class="md:w-1/2 px-4 max-md:w-5/6 m-auto"><img src="../media/undraw_learning_sketching_nd4f.svg"
+                    class="max-w-full"></div>
+        </div>
+    </div>
+    <div id = "sec2"class="sec2">
+        <div class="content">
+        <h2 class="text-center text-4xl font-bold">&quot;Best practices&quot; don’t actually work.</h2>
+        <p class="text-center px-6 py-8 font">I’ve written a few thousand words on why traditional “semantic class names” are the reason CSS is hard to maintain, but the truth is you’re never going to believe me until you actually try it. If you can suppress the urge to retch long enough to give it a chance, I really think you’ll wonder how you ever worked with CSS any other way.</p>
+        </div>
+        <div class= "flex gap-4 flex-row justify-evenly max-sm:flex-col max-sm:gap-16 container mx-auto py-16 text-center">
+            <div class="grow rounded-3xl bg-slate-100 w-48 h-72 max-sm:w-11/12 mx-auto max-w-80  relative py-11 hover:bg-slate-50 ">
+                <img class="max-w-full rounded-full -translate-x-1/2 left-1/2 absolute w-20 -top-10" src="../media/image.png" alt="">
+                <h3 class="text-xl font-bold">Adam Sandler</h3>
+                <p class="">The way I wrote it changed frequently. It’s not a coincidence Tailwind was released the same year. It might look wrong, but spend time with it and you’ll realize semantic CSS was a 20 year mistake.</p>
+            </div>
+            <div class="hover:bg-slate-50 grow rounded-3xl bg-slate-100 w-48 h-72 max-sm:w-11/12 mx-auto max-w-80  relative py-11 ">
+                <img class="max-w-full rounded-full -translate-x-1/2 left-1/2 absolute w-20 -top-10" src="../media/madeline.jpg" alt="">
+                <h3 class="text-xl font-bold">Madeline Bauer</h3>
+                <p class="">I have no design skills and with Tailwind I can actually make good looking websites with ease and it's everything I ever wanted in a CSS framework.</p>
+            </div>
+            <div class="hover:bg-slate-50 grow rounded-3xl bg-slate-100 w-48 h-72 max-sm:w-11/12 mx-auto max-w-80  relative py-11">
+                <img class="max-w-full rounded-full -translate-x-1/2 left-1/2 absolute w-20 -top-10" src="../media/marcel.jpg" alt="">
+                <h3 class="text-xl font-bold">Marcel Khalifa</h3>
+                <p class="">I started using @tailwindcss. I instantly fell in love with their responsive modifiers, thorough documentation, and how easy it was customizing color palettes.</p>
+            </div>
+        </div>
+    </div>
+    <div class="sec3 px-4 bg-orange-500 flex  content-between justify-between items-center py-16 max-md:flex-col max-md:text-center ">
+        <p class="py-5 text-4xl text-white">Move even faster with Tailwind UI.</p>
+        <button class="text-2xl bg-white rounded-3xl p-2 text-orange-500 hover:bg-slate-500 hover:text-white transition-colors"><a href="#">Start Here</a></button>
+    </div>
+    <footer class="flex justify-between p-4 max-md:flex-col max-md:items-center" style = "background-color: #0F172A;">
+        <div class="">
+        <div class="w-48"><img src="../media/logo-dark.png" alt=""></div>
+        <ul class='socail flex justify-center my-10'>
+            <li class="mr-4 text-2xl"><a href='https://www.facebook.com/profile.php?id=100022344901072' target="_blank"><i
+                        class="fa-brands fa-facebook text-blue-700" ></i></a></li>
+            <li class="mr-4 text-2xl"><a href='https://github.com/mahmoudalkirm'><i class="fa-brands fa-github" target="_blank"
+                        style='color: gold'></i></a></li>
+            <li class="mr-4 text-2xl"> <a href='https://wa.link/5man6a'><i class="fa-brands fa-whatsapp" style="color:#0f0"
+                        target="_blank"></i></a></li>
+        </ul>
+        </div>
+        <div class="flex gap-10 text-white">
+         <div class="flex flex-col gap-5">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="flex flex-col gap-5">
+            <a href="#">Imprint</a>
+            <a href="#">Privacy</a>
+            <a href="#">Credites</a>
+        </div>
+        </div>
+        <div class="flex flex-col">
+        <div class="flex max-md:flex-col max-md:pt-10">
+        <input type="text" placeholder="Newsletter" class="rounded-2xl text-xl px-4 grow outline-none border-none">
+        <button class="text-white rounded-full text-xl w-16 bg-orange-500 hover:bg-slate-600 transition-colors max-md:gorw max-md:w-auto">Go</button>
+        </div>
+        <p class="text-white  py-10">Copyright&copy; 2024 ,All Rights Reseved</p>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
+<!-- 
+<p class="">Copyright&copy; 2024 ,All Rights Reseved</p> -->
